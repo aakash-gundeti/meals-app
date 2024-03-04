@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 
   const favMeals = JSON.parse(localStorage.getItem('favorites')) || [];
 
-  if(favMeals){
+  if(favMeals.length){
     updateMeals(favMeals);
   }else{
     const colEle = document.createElement('div');
