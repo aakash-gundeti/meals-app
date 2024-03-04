@@ -3,9 +3,9 @@ const rowEle = document.getElementById('fav-meal-container');
 window.addEventListener("load", () => {
   console.log(JSON.parse(localStorage.getItem('favorites')));
 
-  const favMeals = JSON.parse(localStorage.getItem('favorites'));
+  const favMeals = JSON.parse(localStorage.getItem('favorites')) || [];
 
-  if(favMeals.length){
+  if(favMeals){
     updateMeals(favMeals);
   }else{
     const colEle = document.createElement('div');
