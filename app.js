@@ -57,7 +57,7 @@ async function getMeals(mealName){
           favoriteMeal(meal);
         } else {
           const clickedMeal = clickedContainer.querySelector('.meal-name')
-          location.href = `/single-meal.html?mealName=${clickedMeal.textContent}`;
+          location.href = `/meals-app/single-meal.html?mealName=${clickedMeal.textContent}`;
         }
 
       })
